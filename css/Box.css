@@ -274,3 +274,112 @@ body {
         height: 220px;
     }
 }
+
+
+/* ========================= */
+/* Mobile Optimization */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .cafe {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .cafe h2 {
+        font-size: 1.2rem;
+    }
+
+    /* รูป gallery */
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .image-gallery img {
+        height: 200px;
+    }
+
+    /* ปุ่มลิงก์เรียงสวยขึ้น */
+    .cafe a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #f5efe6;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+
+    .cafe a:hover {
+        background-color: #8b5e3c;
+        color: white;
+    }
+
+    /* กราฟ */
+    .review-card {
+        margin: 25px 0;
+        padding: 18px;
+    }
+
+    .review-card iframe {
+        height: 200px;
+    }
+
+    /* เลขหน้า */
+    .number {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .number a {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}
+
+
+/* ================= MOBILE IMAGE FIX ================= */
+
+@media (max-width: 768px) {
+
+    /* รูปใน gallery */
+    .image-gallery img {
+        height: 160px;   /* ลดความสูงลง */
+        border-radius: 10px;
+    }
+
+    /* กรณีมีรูปเดี่ยว */
+    .cafe > img {
+        height: 180px;
+    }
+
+}
+
+/* มือถือเล็กมาก */
+@media (max-width: 480px) {
+
+    .image-gallery img {
+        height: 140px;
+    }
+
+    .cafe > img {
+        height: 160px;
+    }
+
+}
